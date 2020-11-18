@@ -4,7 +4,7 @@ import v1 from './v1';
 // Inspired from: https://github.com/kurttheviking/uuid-with-v6-js/blob/master/index.js
 
 function v6(options = {}) {
-  const noRandom = options?.noRandom || false;
+  const noRandom = options.noRandom || false;
   const raw = v1();
   const prefix = `${raw.substring(15, 18)}${raw.substring(9, 13)}${raw.substring(
     0,
